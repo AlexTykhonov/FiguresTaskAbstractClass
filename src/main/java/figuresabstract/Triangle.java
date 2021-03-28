@@ -2,14 +2,10 @@ package figuresabstract;
 
 public class Triangle extends Figures {
 
-long sideA, sideB, sideC,heightToA;
-
-    public Triangle(Long circleRadius, Long rectangleSideALength, Long rectangleSideBLength, Long squareSideLength, Long triangleAlength, Long triangleBlength, Long triangleClength, Long triangleHeighttoAlength, long sideA, long sideB, long sideC, long heightToA) {
-        super(circleRadius, rectangleSideALength, rectangleSideBLength, squareSideLength, triangleAlength, triangleBlength, triangleClength, triangleHeighttoAlength);
-        this.sideA = triangleAlength;
-        this.sideB = triangleBlength;
-        this.sideC = triangleClength;
-        this.heightToA = triangleHeighttoAlength;
-        get
+    public Triangle(long triangleAlength, long triangleBlength, long triangleClength, long triangleHeighttoAlength) {
+        super(triangleAlength, triangleBlength, triangleClength, triangleHeighttoAlength);
+        System.out.println("Периметр треугольника: "+getPerimeterTriangle(triangleAlength, triangleBlength,triangleClength));
+        System.out.println("Площадь треугольника: "+getSquareTriangle(triangleAlength, triangleHeighttoAlength));
     }
+
 }

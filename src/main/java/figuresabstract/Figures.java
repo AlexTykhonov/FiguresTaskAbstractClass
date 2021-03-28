@@ -6,28 +6,29 @@ package figuresabstract;
 
 public abstract class Figures {
 
-    Long circleRadius;
-    Long rectangleSideALength;
-    Long rectangleSideBLength;
-    Long squareSideLength;
-    Long triangleAlength;
-    Long triangleBlength;
-    Long triangleClength;
-    Long triangleHeighttoAlength;
+    long circleRadius;
+    long rectangleSideALength;
+    long rectangleSideBLength;
+    long triangleAlength;
+    long triangleBlength;
+    long triangleClength;
+    long triangleHeighttoAlength;
+    long squareSideLength;
 
 
-    public Figures(Long triangleAlength, Long triangleBlength, Long triangleClength, Long triangleHeighttoAlength) {
+
+    public Figures(long triangleAlength, long triangleBlength, long triangleClength, long triangleHeighttoAlength) {
         this.triangleAlength = triangleAlength;
         this.triangleBlength = triangleBlength;
         this.triangleClength = triangleClength;
         this.triangleHeighttoAlength = triangleHeighttoAlength;
     }
 
-    public Figures(Long circleRadius) {
+    public Figures(long circleRadius) {
         this.circleRadius = circleRadius;
     }
 
-    public Figures(Long rectangleSideALength, Long rectangleSideBLength) {
+    public Figures(long rectangleSideALength, long rectangleSideBLength) {
         this.rectangleSideALength = rectangleSideALength;
         this.rectangleSideBLength = rectangleSideBLength;
     }
